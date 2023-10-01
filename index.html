@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Personal Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- header design -->
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#Home" class="active">Home</a>
+            <a href="#About">About</a>
+            <a href="#Services">Services</a>
+            <a href="#Portfolio">Portfolio</a>
+            <a href="#Contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- home section -->
+    <section class="home" id="Home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Hrushikesh</h1>
+            <h3>And I'm a <span>Frontend Developer</span></h3>
+            <p>I'm a web designer with extensive experience.<br> expertise is to creat and website design,Frontend design<br> and many more...</p>
+            <div class="social-media">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <a href="#" class="btn">Download CV</a>
+        </div>
+
+        <div class="home-img">
+            <img src="images/" alt="">
+        </div>
+    </section>
+
+    <!-- about section -->
+    <section class="about" id="About">
+        <!-- <div class="about-img">
+            <img src="images/about.png" alt="">
+        </div> -->
+    
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Frontend Developer</h3>
+            <p>I am a Computer Science student with good problem-solving and algorithmic thinking.
+                 Strong in design and integration with intuitive problem-solving skills.
+                  Ability to create innovative, creative, & interactive web designs to boost customer engagement.
+                   Sound knowledge in HTML5, CSS, Javascript & Reactjs framework.
+                    Build reusable code for future use while optimizing web performance.
+                     Proficient in Web Development.
+                      Passionate about implementing and launching new projects.
+                       Ability to translate business requirements into technical solutions. 
+                Looking to start my career as an entry-level software engineer with a reputed firm driven by technology.</p>
+            <a href="#" class="btn">Read More</a>     
+        </div>
+
+
+        <div class="tab">
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>JQuery</li>
+                    <li>Reactjs</li>
+                    <li>Web Development</li>
+                    <li>Responsive Web Design</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul> 
+                    <li><span>2022</span><br>Frontend development Training in Ace Web Academy,Hyderabad.</li>
+                    <li><span>2019</span><br>Bachelor of Science in Computer Science - Hyderabad</li>
+                    <li><span>2016</span><br>Intermediate from - Bodhan</li>
+                    <li><span>2014</span><br>SSC from - Bodhan</li>
+                </ul>
+            </div>
+        </div>    
+
+    </section>
+    
+    <!-- services section design -->
+
+    <section class="services" id="Services">
+        <h2 class="heading">Our <span>Services</span></h2>
+        <div class="services-container">
+            <div class="service-box">
+                <i class="fa-solid fa-code"></i>
+                <h3>Web Development</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                     Expedita laborum nam ipsum ea cumque,
+                     facilis quaerat deserunt quod adipisci quia.</p>
+                     <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="service-box">
+                <i class="fa-solid fa-pen-nib"></i>
+                <h3>Graphic Design</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                     Expedita laborum nam ipsum ea cumque,
+                     facilis quaerat deserunt quod adipisci quia.</p>
+                     <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- portfolio sectio design -->
+
+    <section class="portfolio" id="Portfolio">
+         <h2 class="heading">Latest <span>Projects</span></h2>
+
+         <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="images/shoe_4.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Shoes Store</h4>
+                    <p>Shoes Store product page</p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/coffee.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Coffee Point</h4>
+                    <p>Coffee Shop Webapage</p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+         </div>
+    </section>
+    <!-- contact -->
+    <section class="contact" id="Contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <!-- footer design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by Hrushi | All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
